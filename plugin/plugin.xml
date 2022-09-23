@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginDescriptor>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.serializers.StreamingSerializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.serializers.JsonStreamingSerializerPlugin</implementationClass>
+		<description>JsonStreamingSerializer</description>
+		<name>Json (Streaming)</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.deserializers.DeserializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.deserializers.JsonDeserializerPlugin</implementationClass>
+		<description>JsonDeserializerPlugin</description>
+		<name>Json</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.deserializers.StreamingDeserializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.deserializers.JsonStreamingDeserializerPlugin</implementationClass>
+		<description>JsonStreamingDeserializerPlugin</description>
+		<name>Json</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.serializers.SerializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.step.serializer.Ifc2x3tc1StepSerializerPlugin</implementationClass>
+		<description>Ifc2x3tc1 Serializer</description>
+		<name>Ifc2x3tc1</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.serializers.SerializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.step.serializer.Ifc4StepSerializerPlugin</implementationClass>
+		<description>Ifc4 Serializer</description>
+		<name>Ifc4</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.serializers.StreamingSerializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.step.serializer.Ifc2x3tc1StepStreamingSerializerPlugin</implementationClass>
+		<description>Ifc2x3tc1 Streaming Serializer</description>
+		<name>Ifc2x3tc1 (Streaming)</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.serializers.StreamingSerializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.step.serializer.Ifc4StepStreamingSerializerPlugin</implementationClass>
+		<description>Ifc4 Streaming Serializer</description>
+		<name>Ifc4 (Streaming)</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.deserializers.StreamingDeserializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.step.deserializer.Ifc4StepStreamingDeserializerPlugin</implementationClass>
+		<description>Ifc4 Step Streaming Deserializer</description>
+		<name>Ifc4 (Streaming)</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.deserializers.StreamingDeserializerPlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.step.deserializer.Ifc2x3tc1StepStreamingDeserializerPlugin</implementationClass>
+		<description>Ifc2x3tc1 Step Streaming Deserializer</description>
+		<name>Ifc2x3tc1 (Streaming)</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.modelcompare.ModelComparePlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.compare.NameBasedModelComparePlugin</implementationClass>
+		<description>Name based compare</description>
+		<name>Name based</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.modelcompare.ModelComparePlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.compare.GuidBasedModelComparePlugin</implementationClass>
+		<description>GUID based compare</description>
+		<name>GUID based</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.services.ServicePlugin</interfaceClass>
+		<implementationClass>org.bimserver.ifc.compare.CompareService</implementationClass>
+		<description>Calls compare and stores results as IFC model</description>
+		<name>Compare Service</name>
+	</JavaPlugin>
+	<JavaPlugin>
+		<interfaceClass>org.bimserver.plugins.renderengine.RenderEnginePlugin</interfaceClass>
+		<implementationClass>org.bimserver.noprenderengine.DefaultNopRenderEngine</implementationClass>
+		<description>No operation render engine (this engine does nothing, for debugging/testing purposes)</description>
+		<name>NOP Render Engine</name>
+	</JavaPlugin>
+</PluginDescriptor>

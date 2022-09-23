@@ -1,2 +1,1 @@
-# kulman-ifcplugins
-
+This projects contains a few demo plugins.
