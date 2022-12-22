@@ -334,8 +334,15 @@ public abstract class IfcStepStreamingDeserializer implements StreamingDeseriali
 		if (eClass == null) {
 			throw new DeserializeException(DeserializerErrorCode.UNKNOWN_ENTITY, lineNumber, name + " is not a known entity");
 		}
-		
-		VirtualObject object = newVirtualObject(eClass, line.length());
+		VirtualObject object = null;
+		try {
+			object = newVirtualObject(eClass, line.length());
+		}
+		catch(Throwable e){
+			metricCollector.increaseBufferSizeFactor();
+			object = newVirtualObject(eClass, line.length());
+			metricCollector.resetBufferSizeFactor();
+		}
 
 		AtomicInteger atomicInteger = summaryMap.get(eClass.getName());
 		if (atomicInteger == null) {
