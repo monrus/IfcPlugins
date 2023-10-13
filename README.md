@@ -1,1 +1,2 @@
-This projects contains a few demo plugins.
+# IfcPlugins
+BIMserver plugins that provide IFC serialization/deserialization
