@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opensourcebim</groupId>
   <artifactId>ifcplugins</artifactId>
-  <version>0.0.102-SNAPSHOT</version>
+  <version>0.0.103-SNAPSHOT</version>
   <name>IfcPlugins</name>
   <description>BIMserver plugin that provides IFC serializers/deserializers</description>
   <url>https://github.com/opensourceBIM/IfcPlugins/BIMserver</url>
@@ -53,7 +53,7 @@
     <dependency>
       <groupId>org.opensourcebim</groupId>
       <artifactId>shared</artifactId>
-      <version>1.5.185-SNAPSHOT</version>
+      <version>1.5.186-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
