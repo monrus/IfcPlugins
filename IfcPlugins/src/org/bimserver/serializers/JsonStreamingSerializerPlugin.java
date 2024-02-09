@@ -104,6 +104,8 @@ public class JsonStreamingSerializerPlugin implements StreamingSerializerPlugin 
 			return "IFC_JSON_2X3TC1";
 		case IFC4:
 			return "IFC_JSON_4";
+		case IFC4X3:
+			return "IFC_JSON_4X3";
 		default:
 			return null;
 		}
