@@ -60,7 +60,7 @@ public class JsonDeserializerPlugin implements DeserializerPlugin {
 		Set<Schema> set = new HashSet<>();
 		set.add(Schema.IFC2X3TC1);
 		set.add(Schema.IFC4);
-		set.add(Schema.IFC4X3);
+		set.add(Schema.IFC4X3_ADD2);
 		return set;
 	}
 }

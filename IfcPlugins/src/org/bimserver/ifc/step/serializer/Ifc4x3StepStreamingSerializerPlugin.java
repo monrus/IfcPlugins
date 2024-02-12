@@ -33,7 +33,7 @@ public class Ifc4x3StepStreamingSerializerPlugin extends IfcStepStreamingSeriali
 
 	@Override
 	public Set<Schema> getSupportedSchemas() {
-		return Schema.IFC4X3.toSet();
+		return Schema.IFC4X3_ADD2.toSet();
 	}
 
 	@Override
