@@ -32,13 +32,13 @@ import org.bimserver.plugins.deserializers.Deserializer;
 public class Ifc4x3StepDeserializerPlugin extends IfcStepDeserializerPlugin {
 	@Override
 	public Deserializer createDeserializer(PluginConfiguration pluginConfiguration) {
-		return new Ifc4x3StepDeserializer(Schema.IFC4X3_ADD2);
+		return new Ifc4x3StepDeserializer(Schema.IFC4X3);
 	}
 	
 	@Override
 	public Set<Schema> getSupportedSchemas() {
 		Set<Schema> set = new HashSet<>();
-    	set.add(Schema.IFC4X3_ADD2);
+    	set.add(Schema.IFC4X3);
 		return set;
 	}
 }

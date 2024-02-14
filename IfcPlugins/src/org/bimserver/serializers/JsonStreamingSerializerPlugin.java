@@ -90,7 +90,7 @@ public class JsonStreamingSerializerPlugin implements StreamingSerializerPlugin 
 
 	@Override
 	public Set<Schema> getSupportedSchemas() {
-		return Schema.asSet(Schema.IFC2X3TC1, Schema.IFC4, Schema.IFC4X3_ADD2);
+		return Schema.asSet(Schema.IFC2X3TC1, Schema.IFC4, Schema.IFC4X3);
 	}
 
 	@Override
@@ -100,7 +100,7 @@ public class JsonStreamingSerializerPlugin implements StreamingSerializerPlugin 
 			return "IFC_JSON_2X3TC1";
 		case IFC4:
 			return "IFC_JSON_4";
-		case IFC4X3_ADD2:
+		case IFC4X3:
 			return "IFC_JSON_4X3";
 		default:
 			return null;
