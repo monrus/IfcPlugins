@@ -90,11 +90,7 @@ public class JsonStreamingSerializerPlugin implements StreamingSerializerPlugin 
 
 	@Override
 	public Set<Schema> getSupportedSchemas() {
-		Set<Schema> schemas = new HashSet<>();
-		schemas.add(Schema.IFC2X3TC1);
-		schemas.add(Schema.IFC4);
-		schemas.add(Schema.IFC4X3);
-		return schemas;
+		return Schema.asSet(Schema.IFC2X3TC1, Schema.IFC4, Schema.IFC4X3);
 	}
 
 	@Override
