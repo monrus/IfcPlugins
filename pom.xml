@@ -83,7 +83,7 @@
     <testSourceDirectory>IfcPlugins/test</testSourceDirectory>
     <resources>
       <resource>
-        <targetPath>IfcPlugins/plugin</targetPath>
+        <targetPath>plugin</targetPath>
         <filtering>true</filtering>
         <directory>IfcPlugins/plugin</directory>
       </resource>
