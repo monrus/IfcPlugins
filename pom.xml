@@ -79,13 +79,13 @@
     </repository>
   </repositories>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <testSourceDirectory>test</testSourceDirectory>
+    <sourceDirectory>IfcPlugins/src</sourceDirectory>
+    <testSourceDirectory>IfcPlugins/test</testSourceDirectory>
     <resources>
       <resource>
-        <targetPath>plugin</targetPath>
+        <targetPath>IfcPlugins/plugin</targetPath>
         <filtering>true</filtering>
-        <directory>plugin</directory>
+        <directory>IfcPlugins/plugin</directory>
       </resource>
     </resources>
     <plugins>
